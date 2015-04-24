@@ -56,6 +56,19 @@ CREATE TABLE employee_department (
 ALTER TABLE public.employee_department OWNER TO postgres;
 
 --
+-- Name: employee_hobby; Type: TABLE; Schema: public; Owner: postgres; Tablespace: 
+--
+
+CREATE TABLE employee_hobby (
+    id character varying(18) NOT NULL,
+    name text NOT NULL,
+    description text
+);
+
+
+ALTER TABLE public.employee_hobby OWNER TO postgres;
+
+--
 -- Data for Name: employee; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
@@ -76,6 +89,20 @@ INSERT INTO employee_department VALUES ('HECE732123HOCNLN03', 'Sistemas', 'Depar
 INSERT INTO employee_department VALUES (NULL, 'Vinculacion', 'Departamento de vinculacion');
 INSERT INTO employee_department VALUES (NULL, 'Gestion de calidad', 'Departamento de gestion de calidad');
 INSERT INTO employee_department VALUES (NULL, 'Mantenimiento', 'Departamento de mantenimiento');
+
+
+--
+-- Data for Name: employee_hobby; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+INSERT INTO employee_hobby VALUES ('FEDA930406HOCNLN00', 'Videojuegos', 'Personas que juegan videojuegos en su tiempo libre');
+INSERT INTO employee_hobby VALUES ('RAAC542908HOCNLN02', 'Videojuegos', 'Personas que juegan videojuegos en su tiempo libre');
+INSERT INTO employee_hobby VALUES ('FEDA930406HOCNLN00', 'Musica', 'Personas que tocan algun instrumento');
+INSERT INTO employee_hobby VALUES ('FEFA876245HOCNLN01', 'Musica', 'Personas que tocan algun instrumento');
+INSERT INTO employee_hobby VALUES ('HECE732123HOCNLN03', 'Musica', 'Personas que tocan algun instrumento');
+INSERT INTO employee_hobby VALUES ('FEFA876245HOCNLN01', 'Deportes', 'Personas que practican deportes');
+INSERT INTO employee_hobby VALUES ('RAAC542908HOCNLN02', 'Deportes', 'Personas que practican deportes');
+INSERT INTO employee_hobby VALUES ('HECE732123HOCNLN03', 'Deportes', 'Personas que practican deportes');
 
 
 --
