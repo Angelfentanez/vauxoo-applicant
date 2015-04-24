@@ -36,7 +36,8 @@ SET default_with_oids = false;
 CREATE TABLE employee (
     id character varying(18) NOT NULL,
     "First Name" text,
-    "Last Name" text
+    "Last Name" text,
+    jefe text
 );
 
 
@@ -72,10 +73,10 @@ ALTER TABLE public.employee_hobby OWNER TO postgres;
 -- Data for Name: employee; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
-INSERT INTO employee VALUES ('FEDA930406HOCNLN00', 'Jose', 'Fentanez');
-INSERT INTO employee VALUES ('FEFA876245HOCNLN01', 'Alejandra', 'Fernandez');
-INSERT INTO employee VALUES ('RAAC542908HOCNLN02', 'Carlos', 'Rangel');
-INSERT INTO employee VALUES ('HECE732123HOCNLN03', 'Eric', 'Hernandez');
+INSERT INTO employee VALUES ('FEFA876245HOCNLN01', 'Alejandra', 'Fernandez', 'Jose Fentanez');
+INSERT INTO employee VALUES ('HECE732123HOCNLN03', 'Eric', 'Hernandez', 'Jose Fentanez');
+INSERT INTO employee VALUES ('FEDA930406HOCNLN00', 'Jose', 'Fentanez', 'Carlos Rangel');
+INSERT INTO employee VALUES ('RAAC542908HOCNLN02', 'Carlos', 'Rangel', NULL);
 
 
 --
