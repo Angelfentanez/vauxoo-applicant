@@ -6,7 +6,7 @@
 CREATE TABLE employee (
 id character varying(2) NOT NULL,
 first_name text,
-last_name text,
+last_name text
 );
 
 CREATE TABLE employee_department (
